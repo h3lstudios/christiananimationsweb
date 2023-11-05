@@ -111,7 +111,14 @@ p {
   margin-top: 20px;
 }
 
-.carousel-item img {
-      width: 100%;
-      height: auto;
+.product-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .product-name {
+      text-align: center;
     }
