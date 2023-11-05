@@ -6,11 +6,22 @@ body {
 
 .container {
   background: linear-gradient(to right, red, blue);
-  height: 100vh;
+  height: 250vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background: linear-gradient(to right, red, blue);
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
   text-align: center;
   color: white;
 }
@@ -22,4 +33,80 @@ h1 {
 
 p {
   font-size: 24px;
+}
+
+.toolbar {
+  background-color: red;
+  height: 50px;
+  color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.toolbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar ul li {
+  margin-right: 10px;
+}
+
+.toolbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.toolbar ul li a:hover {
+  background-color: #555;
+}
+
+.nava {
+  background-color: rgb(17, 0, 255);
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.nav {
+  background-color: rgb(17, 0, 255);
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 10px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav ul li a:hover {
+  background-color: #555;
+}
+
+.iframe-container {
+  margin-top: 20px;
 }
