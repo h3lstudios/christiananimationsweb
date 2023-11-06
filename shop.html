@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ChristianAnimations Studios</title>
+  <title>ChristianAnimations Studios Shop</title>
   <link rel="stylesheet" type="text/css" href="looks.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scr.js"></script>
 </head>
 <body>
   <div class="toolbar">
@@ -21,26 +22,66 @@
     </ul>
   </div>
   
-  <div id="catalog-container" class="d-flex flex-wrap justify-content-center"></div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="catalog.js"></script>
+  <main>
+    <h2>Shop</h2>
+    <div id="product-list"></div>
+  </main>
+  
   <div class="nava">
     <center><h4>©ChristianAnimations 2023. All rights reserved.</h4></center>
   </div>
+  
   <div class="nav">
-      <br>
+    <br>
     <center>
       <ul>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdwWqIDrWibYjho2Vg504UZLJV44s0Q4OuvoidfR-sM2nf2wg/viewform">Pitch a Project</a></li>
         <li><a href="about">Our Team and Story</a></li>
         <li><a href="press">Press Inquiries</a></li>
-        <li><a href="fourms"></a>Fourms</li>
+        <li><a href="fourms"></a>Forums</li>
         <li><a href="music"></a>Music Shop</li>
       </ul>
     </center>
   </div>
+  
+  <script>
+    $(document).ready(function() {
+      // fetch product data from the API
+      $.ajax({
+        url: 'api.php',
+        method: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          if (response.success) {
+            // loop through the products and display them
+            response.products.forEach(function(product) {
+              var productHtml = '<div class="product">';
+              productHtml += '<h3>' + product.title + '</h3>';
+              productHtml += '<p>Price: $' + product.price + '</p>';
+              productHtml += '<button class="add-to-cart" data-product-id="' + product.id + '">Add to Cart</button>';
+              productHtml += '</div>';
+              $('#product-list').append(productHtml);
+            });
+            
+            // add event listener for the "Add to Cart" buttons
+            $('.add-to-cart').click(function() {
+              var productId = $(this).data('product-id');
+              addToCart(productId);
+            });
+          } else {
+            console.error('Error fetching products: ' + response.error);
+          }
+        },
+        error: function(xhr, status, error) {
+          console.error('AJAX request failed: ' + error);
+        }
+      });
+      
+      // function to handle adding a product to the cart
+      function addToCart(productId) {
+      }
+    });
+  </script>
   
 </body>
 </html>
