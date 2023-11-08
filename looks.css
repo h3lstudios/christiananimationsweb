@@ -122,3 +122,47 @@ p {
     .product-name {
       text-align: center;
     }
+
+.social-buttons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .social-buttons li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    
+    .social-buttons li a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 20px;
+      background-color: #333333;
+      text-decoration: none;
+    }
+    
+    .social-buttons li a.instagram {
+      background-color: #e4405f;
+    }
+    
+    .social-buttons li a.youtube {
+      background-color: #ff0000;
+    }
+    
+    .social-buttons li a.twitter {
+      background-color: #ffffff;
+    }
+    
+    .social-buttons li a.tiktok {
+      background-color: #ffffff;
+    }
+    
+    .social-buttons li a.discord {
+      background-color: #7289da;
+    }
