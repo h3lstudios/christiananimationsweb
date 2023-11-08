@@ -149,21 +149,26 @@ p {
     }
     
     .social-buttons li a.instagram {
-      background-color: #e4405f;
+      background-color: blue;
+      fill: white;
     }
     
     .social-buttons li a.youtube {
-      background-color: #ff0000;
+      background-color: #blue;
+      fill: white;
     }
     
     .social-buttons li a.twitter {
-      background-color: #ffffff;
+      background-color: #blue;
+      fill: white;
     }
     
     .social-buttons li a.tiktok {
-      background-color: #ffffff;
+      background-color: #blue;
+      fill: white;
     }
     
     .social-buttons li a.discord {
-      background-color: #7289da;
+      background-color: #blue;
+      fill: white;
     }
