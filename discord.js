@@ -12,7 +12,7 @@ function handleCallback() {
     },
     body: new URLSearchParams({
       client_id: '1173551794073387038',
-      client_secret: 'secrets.CLIENT_SECRET',
+      client_secret: '3slmJBrrURKliTY2pAcmQsTKK1Ink7KN',
       grant_type: 'authorization_code',
       code: code,
       redirect_uri: 'https://discord.com/api/oauth2/authorize?client_id=1173551794073387038&redirect_uri=https%3A%2F%2Fcastudios.h3l.fun%2Fauth&response_type=code&scope=identify%20email',
