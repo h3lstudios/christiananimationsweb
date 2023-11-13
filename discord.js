@@ -12,7 +12,7 @@ function handleCallback() {
     },
     body: new URLSearchParams({
       client_id: '1173551794073387038',
-      client_secret: 'CLIENT_SECRET',
+      client_secret: 'secrets.CLIENT_SECRET',
       grant_type: 'authorization_code',
       code: code,
       redirect_uri: 'REDIRECT_URI',
