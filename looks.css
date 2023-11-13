@@ -176,3 +176,5 @@ p {
       background-color: blue;
       fill: white !important;
     }
+
+app.use('',express.static(path.join(__dirname, 'public')));
