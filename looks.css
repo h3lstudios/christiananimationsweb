@@ -154,27 +154,25 @@ p {
     
     .social-buttons li a.instagram {
       background-color: blue;
-      fill: white !important;
+      fill: white;
     }
     
     .social-buttons li a.youtube {
       background-color: blue;
-      fill: white !important;
+      fill: white;
     }
     
     .social-buttons li a.threads {
       background-color: blue;
-      fill: white !important;
+      fill: white;
     }
     
     .social-buttons li a.tiktok {
       background-color: blue;
-      fill: white !important;
+      fill: white;
     }
     
     .social-buttons li a.discord {
       background-color: blue;
-      fill: white !important;
+      fill: white;
     }
-
-app.use('',express.static(path.join(__dirname, 'public')));
