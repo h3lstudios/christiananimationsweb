@@ -176,3 +176,36 @@ p {
       background-color: blue;
       fill: white;
     }
+
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    button#commentButton {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    input.textBox {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }

@@ -25,34 +25,44 @@
   </div>
   
   <div class="container">
-    <center><h1>About</h1></center>
-  <br>
-    <center><img src="assets/castudios_full.png" alt="CA Studios" style="width:300px;height:250px;"></center>
-    <center><p>At ChristianAnimations Studios, we strive to create unique and captivating animations. We started our independent studio back in 2018, and since then, we have worked hard to create projects that are imaginative and engaging. We still have a long way to go before we can say we are a big studio, but we know that we can make it there. We are passionate about our craft and take pride in the work we do, always striving to create the best animation possible, even if that means taking risks.</p></center>
-    <br>
-    <h1> </h1>
-    <br>
-    <center><p>"ChristianAnimations Studios was created to better the animation industry and to let people be indenpendet, without restrictions."</p></center>
-    <br>
-    <h1> </h1>
-    <br>
-    <center><img src="https://static.wixstatic.com/media/800c4d_373741aff84a4f86a3fc3f7c6b6953f8~mv2.png/v1/crop/x_1880,y_0,w_1731,h_2160/fill/w_744,h_928,al_c,q_90,usm_1.20_1.00_0.01,enc_auto/Animation-file-SP.png" alt="Animation-file-SP.png" width="372" height="464" style="width: 372px; height: 464px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></center>
-    <center><p>Christian N.</p></center>
-    <center><h4>Founder/CEO/Voice actor/Animator/Showrunner</h4></center>
-    <center><img src="https://static.wixstatic.com/media/800c4d_637bf7a44eb24964b06ee07a2593292d~mv2.jpeg/v1/crop/x_47,y_0,w_379,h_473/fill/w_455,h_567,al_c,lg_1,q_80,usm_1.20_1.00_0.01,enc_auto/Valentines_bee.jpeg" alt="Valentines_bee.jpeg" width="372" height="464" style="width: 372px; height: 464px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></center>
-    <center><p>bee</p></center>
-    <center><h4>Director</h4></center>
+    <h1>&nbsp;Blog</h1>
+    <div class="blogform">
+        <h2>Title hereASDADADADAD</h2>
+        <hr>
+        <p id="datePlaceholder"></p>
+        <input type="text" class="textBox">
+        <button id="commentButton">Comment</button>
+        <!-- Insert more of the template above here
+    
+    <div class="blogform">
+    <h2>Title</h2>
+    <hr>
+    <p id="datePlaceholder">YYYY-MM-DD</p>
+    <input type="date" id="dateInput">
+    <input type="text" class="textBox">
+    <button id="commentButton">Comment</button>
+  </div>-->
+      </div>
   </div>
+  <script>
+    const dateInput = document.getElementById('dateInput');
+    const datePlaceholder = document.getElementById('datePlaceholder');
+  
+    dateInput.addEventListener('input', function() {
+      datePlaceholder.textContent = dateInput.value;
+    });
+  </script>
   <div class="nava">
     <center><h4>©ChristianAnimations 2023. All rights reserved.</h4></center>
   </div>
-      <ul class="social-buttons">
+  <ul class="social-buttons">
     <center>
-      <li><a class="instagram" href="https://www.instagram.com/christiananimations_studios/"><img src="assets/instagram.svg" alt="Instagram"></a></li>
+     <li><a class="instagram" href="https://www.instagram.com/christiananimations_studios/"><img src="assets/instagram.svg" alt="Instagram"></a></li>
     <li><a class="youtube" href="https://www.youtube.com/channel/UCq3z9XmMqgqKMEOSf66Moug"><img src="assets/youtube.svg" alt="YouTube"></a></li>
     <li><a class="threads" href="https://www.threads.net/@christiananimations_studios"><img src="assets/threads.svg" alt="Threads"></a></li>
     <li><a class="tiktok" href="vm.tiktok.com/TTPd6LSgjP"><img src="assets/tiktok.svg" alt="TikTok"></a></li>
     <li><a class="discord" href="https://discord.com/invite/Xmj9QfmBpZ"><img src="assets/discord.svg" alt="Discord"></a></li>
+    </center>
     </center>
   </ul>
   <div class="nav">
